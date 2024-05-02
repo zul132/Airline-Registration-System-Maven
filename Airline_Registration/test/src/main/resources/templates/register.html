@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airline Registration Form</title>
+</head>
+<body>
+  <h1>Welcome to Airline Registration System!</h1>
+  <h2>Book Ticket</h2>
+  <form action="#" th:action="@{/reg}" method="post">
+    <label for="passname">Passenger Name</label><br>
+    <input type="text" id="passname" name="passname" required><br><br>
+    <label for="passemail">Passenger Email</label><br>
+    <input type="text" id="passemail" name="passemail" required><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    <label for="tickets">No. of Tickets:</label><br>
+    <input type="number" id="tickets" name="tickets" required><br><br>
+    <label for="destination">Destination:</label><br>
+    <input type="text" id="destination" name="destination" required><br><br>
+    <label for="airline">Airline:</label><br>
+    <input type="text" id="airline" name="airline" required><br><br>
+    <input type="submit" id="book" name="book" value="Book">
+  </form>
+</body>
+</html>
+
+
